@@ -26,7 +26,7 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
+article, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
@@ -38,7 +38,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+article, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -392,27 +392,7 @@ header {
     padding: 0;
     width: 222px;
 }
-#extra-wrap {
-	width: 100%;
-	color: #C2DBE7;
-    padding-bottom: 24px;
-	border-top: #164F74;
-}
-#extra {
-	width: 978px;
-	margin: 0 auto;
-    font-size: 12px;
-    line-height: 20px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
-}
-#extra .col {
-	float: left;
-    margin-left: 30px;
-    width: 222px;
-}
-#extra .first {
-    margin-left: 0;
-}
+
 footer {
 	clear: both;
     width: 978px;
@@ -444,6 +424,7 @@ header hgroup h1 {
     margin: 0;
     padding: 0;
 }
+/*mess around with indent*/
 header hgroup h1 a {
     text-indent: -9999em;
     display: block;
@@ -649,57 +630,7 @@ header .search button.btn {
     margin-top: 6px;
 }
 
-/* ---------------------------------------------------------------------------
-    E X T R A
------------------------------------------------------------------------------ */
-#extra p {
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, Sans-serif;
-}
-#extra strong, #extra em, #extra b, #extra i {
-    font-family:  'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', Verdana, sans-serif;
-}
 
-#extra a:link,
-#extra a:visited { color: #fff; }
-#extra a:hover { color: #99CCFF; }
-
-#extra h3 {
-    font: bold 18px  'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', Verdana, Sans-Serif;
-    margin-bottom: 15px;
-	color: #fff;
-}
-
-/* Gallery */
-#extra #gallery {
-	padding: 0 0 15px 0;
-    margin: 0 0 36px 0;
-    width: 100%;
-    background: url(../images/footer-line.png) repeat-x left bottom;
-}
-#extra #gallery h3 {
-    float: left;
-    width: 222px;
-    margin: 30px 0 0 0;
-    padding: 0;
-}
-#extra #gallery p.thumbs {
-    float: right;
-    width: 750px;
-    margin: 20px 0 0 0;
-    padding: 0;
-}
-#extra #gallery p.thumbs img {
-	position: relative;
-	padding: 9px;
-	margin: 10px 0 10px 12px;
-	background: #FAFAFA;
-    border: 1px solid #EDEDED;
-    float: right;
-
-    -moz-box-shadow: 1px 1px 3px #184569 ;
-	-webkit-box-shadow: 1px 1px 3px #184569;
-	box-shadow: 1px 1px 3px #184569;
-}
 
 /* Recent Comments */
 .recent-comments ul {
@@ -808,7 +739,6 @@ footer p.footer-right {
 }
 .primary {
     width: 533px;
-    float: right;
     padding-right: 25px;
 }
 .primary .image-section {
@@ -818,76 +748,7 @@ footer p.footer-right {
 	padding: 0;
 }
 
-aside {
-    position: relative;
-    width: 135px;
-    float: left;
-}
 
-/* Date Info */
-aside p.dateinfo {
-    background: url(../images/date-bg.png) no-repeat;
-    height: 70px;
-    width: 60px;
-    margin: 10px 0 0 78px;
-    padding: 7px 0 0 0;
-    font: bold 15px Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 2px;
-    color: #fff;
-    text-shadow: 0 -1px 0 rgba(10, 10, 10, 1);
-}
-aside p.dateinfo span {
-    font: bold 26px 'Lucida Grande','Lucida Sans Unicode', 'Lucida Sans', Verdana, Sans-Serif;
-    display: block;
-    color: #444;
-    margin: 5px 0 0 0;
-    padding: 0;
-    letter-spacing: 0;
-    text-shadow: none;
-}
-
-/* Post Meta */
-aside .post-meta {
-    width: 138px;
-    font-size: .9em;
-    margin: 20px 0;
-    padding: 0;
-}
-aside .post-meta h4 {
-    text-align: right;
-    margin: 0 0 12px 0;
-    padding: 0;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 0;
-}
-aside .post-meta ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border-top: 1px solid #E5E5E5;
-}
-aside .post-meta ul li {
-	padding: 4px 0;
-	margin: 0;
-    text-align: right;
-    border-bottom: 1px solid #E5E5E5;
-}
-
-aside .post-meta ul.tags li { background: url(../images/tag.png) no-repeat 2px center; }
-aside .post-meta ul li.user { background: url(../images/user.png) no-repeat 2px center; }
-aside .post-meta ul li.time { background: url(../images/clock.png) no-repeat 2px center; }
-aside .post-meta ul li.comment { background: url(../images/comment.png) no-repeat 2px center; }
-aside .post-meta ul li.permalink { background: url(../images/permalink.png) no-repeat 2px center; }
-
-aside .post-meta ul li a {
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, Sans-Serif;
-    font-size: 12px;
-}
-aside .post-meta ul li a { color: #666666; }
-aside .post-meta ul li a:hover { color: #CC3300; }
 
 /* Post Bottom */
 .post-bottom-section {

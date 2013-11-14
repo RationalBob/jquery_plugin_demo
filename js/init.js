@@ -7,7 +7,7 @@ $(document).ready(function(){
     };
 	$('input.display').flapper(opts).val('HELLO THERE').change();
 	
-	var inputValue = $("#flapperInput").text();
+	var inputValue = $("#flapperInput").val().toUpperCase();
 	
 	$('#change').click(function() {
 		$('input.display').val(inputValue).change();
